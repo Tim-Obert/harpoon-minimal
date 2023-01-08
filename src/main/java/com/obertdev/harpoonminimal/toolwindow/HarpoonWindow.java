@@ -44,7 +44,7 @@ public class HarpoonWindow {
                         var project = context.getData(CommonDataKeys.PROJECT);
                         HarpoonService service = HarpoonService.getInstance(project);
                         if (service != null) {
-                            service.removeFile((int) table1.getModel().getValueAt(table1.getSelectedRow(), 0));
+                            service.removeFile((int) table1.getModel().getValueAt(table1.getSelectedRow(), 0) - 1);
                         }
                     });
                 }
@@ -59,7 +59,7 @@ public class HarpoonWindow {
                         HarpoonService service = HarpoonService.getInstance(project);
                         if (service != null) {
                             var index = (int) table1.getModel().getValueAt(table1.getSelectedRow(), 0);
-                            service.changeSorting(index, -1);
+                            service.changeSorting(index - 1, -1);
                         }
                     });
                 }
@@ -76,7 +76,7 @@ public class HarpoonWindow {
                         if (service != null) {
                             try {
                                 var index = (int) table1.getModel().getValueAt(table1.getSelectedRow(), 0);
-                                service.changeSorting(index, 1);
+                                service.changeSorting(index - 1, 1);
                             } catch (Exception ex){}
                         }
                     });
@@ -92,7 +92,7 @@ public class HarpoonWindow {
                     if (service != null) {
                         try {
                             var index = (int) table1.getModel().getValueAt(table1.getSelectedRow(), 0);
-                            service.openFile((Project) project.get(), index);
+                            service.openFile((Project) project.get(), index - 1);
                         } catch (Exception ex){}
                     }
                 });
@@ -113,7 +113,7 @@ public class HarpoonWindow {
             for (int i = 0; i < service.stateValue.size(); i++) {
                 var filename = service.stateValue.get(i);
                 filename = filename.replace(project.getBasePath() + "/", "");
-                var row = new Object[]{i, filename};
+                var row = new Object[]{i + 1, filename};
                 tableModel.insertRow(i, row);
             }
             table1 = new JBTable(tableModel);
