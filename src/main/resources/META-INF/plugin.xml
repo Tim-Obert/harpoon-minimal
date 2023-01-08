@@ -5,7 +5,7 @@
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Harpoon-minimal</name>
+    <name>Harpoon-Minimal</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="tim-obert@web.de" url="https://github.com/Tim-Obert">Tim Obert</vendor>

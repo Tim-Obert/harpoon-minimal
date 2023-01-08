@@ -11,6 +11,7 @@ If you're implementing a feature you are editing a small amount of files.
 With harpoon-minimal you can save these files and navigate via shortcut to them.
 
 The plugin provides a Toolwindow:
+
 ![Harpoon](harpoon-minimal.jpeg)
 
 In this window you can see the files that were saved. You can also add the currently opened file.
