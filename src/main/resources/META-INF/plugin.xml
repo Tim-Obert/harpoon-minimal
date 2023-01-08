@@ -1,0 +1,69 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.obertdev.harpoon-minimal</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Harpoon-minimal</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="tim-obert@web.de" url="">Tim Obert</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    Inspired by <a href="https://github.com/ThePrimeagen/harpoon">theprimagen/harpoon</a> lets
+    you easy and quick navigate between certain files.
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Harpoon" secondary="true" icon="AllIcons.General.Modified" anchor="right"
+                    factoryClass="com.obertdev.harpoonminimal.toolwindow.HarpoonWindowFactory"/>
+
+        <projectService
+                serviceImplementation="com.obertdev.harpoonminimal.services.HarpoonService"/>
+    </extensions>
+    <actions>
+        <action id="AddFile" class="com.obertdev.harpoonminimal.actions.AddFileAction" text="Add File Action"
+                description="Opens an file to Harpoon">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl h" second-keystroke="a"/>
+        </action>
+        <action id="OpenHarpoon" class="com.obertdev.harpoonminimal.actions.OpenHarpoonAction" text="Open Harpoon"
+                description="Opens harpoon dialog">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl h" second-keystroke="o"/>
+        </action>
+        <action id="com.obertdev.harpoonminimal.actions.OpenFile1Action"
+                class="com.obertdev.harpoonminimal.actions.OpenFile1Action" text="Open File 1"
+                description="Opens the first file of Harpoon Table">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl h" second-keystroke="1"/>
+        </action>
+        <action id="com.obertdev.harpoonminimal.actions.OpenFile2Action"
+                class="com.obertdev.harpoonminimal.actions.OpenFile2Action" text="Open File 2"
+                description="Opens the second file of Harpoon Table">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl h" second-keystroke="2"/>
+        </action>
+        <action id="com.obertdev.harpoonminimal.actions.OpenFile3Action"
+                class="com.obertdev.harpoonminimal.actions.OpenFile3Action" text="Open File 3"
+                description="Opens the third file of Harpoon Table">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl h" second-keystroke="3"/>
+        </action>
+        <action id="com.obertdev.harpoonminimal.actions.OpenFile4Action"
+                class="com.obertdev.harpoonminimal.actions.OpenFile4Action" text="Open File 4"
+                description="Opens the fourth file of Harpoon Table">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl h" second-keystroke="4"/>
+        </action>
+        <action id="com.obertdev.harpoonminimal.actions.OpenFile5Action"
+                class="com.obertdev.harpoonminimal.actions.OpenFile5Action" text="Open File 5"
+                description="Opens the fifth file of Harpoon Table">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl h" second-keystroke="5"/>
+        </action>
+    </actions>
+</idea-plugin>
