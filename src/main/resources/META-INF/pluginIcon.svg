@@ -1,12 +1,21 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32.0845 7.94025V4H24.0203V7.9896H16.029V4H7.91553V7.94025H4V36H16.0044V32.0045C16.0058 30.9457 16.4274 29.9308 17.1766 29.1826C17.9258 28.4345 18.9412 28.0143 20 28.0143C21.0588 28.0143 22.0743 28.4345 22.8234 29.1826C23.5726 29.9308 23.9942 30.9457 23.9956 32.0045V36H36V7.94025H32.0845Z"
-          fill="url(#paint0_linear)"/>
-    <defs>
-        <linearGradient id="paint0_linear" x1="2.94192" y1="4.89955" x2="37.7772" y2="39.7345"
-                        gradientUnits="userSpaceOnUse">
-            <stop offset="0.15937" stop-color="#3BEA62"/>
-            <stop offset="0.5404" stop-color="#3C99CC"/>
-            <stop offset="0.93739" stop-color="#6B57FF"/>
-        </linearGradient>
-    </defs>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="32.000000pt" height="32.000000pt" viewBox="0 0 32.000000 32.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M23 279 c4 -13 7 -28 7 -34 0 -5 5 -3 10 5 8 12 18 7 53 -30 23 -25
+47 -55 54 -65 11 -18 14 -18 25 -5 16 19 81 15 99 -6 6 -8 15 -29 19 -47 l8
+-32 1 31 c1 42 -31 74 -74 74 -28 0 -35 4 -35 19 0 18 -19 32 -43 30 -7 0 -2
+-4 11 -9 26 -11 31 -43 5 -33 -30 10 -102 85 -96 99 3 8 1 14 -5 14 -6 0 -18
+3 -28 7 -14 5 -16 2 -11 -18z"/>
+<path d="M174 139 c-3 -6 7 -25 25 -42 24 -25 33 -29 43 -19 9 9 6 18 -17 42
+-31 33 -40 36 -51 19z"/>
+<path d="M249 63 c-13 -16 -12 -17 4 -4 9 7 17 15 17 17 0 8 -8 3 -21 -13z"/>
+<path d="M280 35 c-10 -12 -10 -15 4 -15 9 0 16 7 16 15 0 8 -2 15 -4 15 -2 0
+-9 -7 -16 -15z"/>
+</g>
 </svg>
