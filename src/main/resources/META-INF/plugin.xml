@@ -25,7 +25,7 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="Harpoon" secondary="true" icon="AllIcons.General.Modified" anchor="right"
+        <toolWindow id="Harpoon" secondary="true" icon="com.obertdev.harpoonminimal.icons.HarpoonIcons.Dark" anchor="right"
                     factoryClass="com.obertdev.harpoonminimal.toolwindow.HarpoonWindowFactory"/>
 
         <projectService
