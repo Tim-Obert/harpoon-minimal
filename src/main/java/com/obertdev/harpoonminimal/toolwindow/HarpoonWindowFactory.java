@@ -22,7 +22,7 @@ public class HarpoonWindowFactory implements ToolWindowFactory {
     }
     private Content getContent(@NotNull ToolWindow toolWindow){
         HarpoonWindow harpoonWindow = new HarpoonWindow(toolWindow);
-        ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
+        ContentFactory contentFactory = ContentFactory.getInstance();
         return contentFactory.createContent(harpoonWindow.getContent(), "", false);
 
     }
