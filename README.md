@@ -7,6 +7,7 @@
 </div>
 
 ## The Problem:
+<!-- Plugin description -->
 If you're implementing a feature you are editing a small amount of files.
 With harpoon-minimal you can save these files and navigate via shortcut to them.
 
@@ -17,7 +18,7 @@ The plugin provides a Toolwindow:
 In this window you can see the files that were saved. You can also add the currently opened file.
 If you select a row in the table(right-click), you can change the sorting of the row or delete the file from harpoon.
 Delete only means that the harpoon-marker of the file is deleted not the file itself.
-
+<!-- Plugin description end -->
 ### Opening the toolwindow
 ````
 First Keystroke: Ctrl + h 
