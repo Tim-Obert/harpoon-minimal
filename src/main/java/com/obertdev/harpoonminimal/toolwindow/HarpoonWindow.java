@@ -22,7 +22,6 @@ import java.util.concurrent.atomic.AtomicReference;
 public class HarpoonWindow {
     private JBTable table1;
     private JPanel harpoonWindowContent;
-    private Tree tree1;
     private JButton addCurrentFileButton;
     private JButton deleteButton;
     private JButton sortUpButton;
